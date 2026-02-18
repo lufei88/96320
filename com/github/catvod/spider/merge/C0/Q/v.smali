@@ -1,0 +1,22 @@
+.class public abstract Lcom/github/catvod/spider/merge/C0/Q/v;
+.super Lcom/github/catvod/spider/merge/C0/Q/m;
+
+
+# instance fields
+.field public g:I
+
+.field public h:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/github/catvod/spider/merge/C0/Q/m;-><init>()V
+
+    const/4 v0, -0x1
+
+    iput v0, p0, Lcom/github/catvod/spider/merge/C0/Q/v;->g:I
+
+    return-void
+.end method

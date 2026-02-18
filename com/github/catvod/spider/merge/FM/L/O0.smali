@@ -1,0 +1,118 @@
+.class final enum Lcom/github/catvod/spider/merge/FM/L/O0;
+.super Lcom/github/catvod/spider/merge/FM/L/j1;
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 4
+
+    const-string v0, "BeforeDoctypeName"
+
+    const/16 v1, 0x33
+
+    const/4 v2, 0x0
+
+    invoke-direct {p0, v0, v1, v2}, Lcom/github/catvod/spider/merge/FM/L/j1;-><init>(Ljava/lang/String;ILcom/github/catvod/spider/merge/FM/L/e0;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method final g(Lcom/github/catvod/spider/merge/FM/L/T;Lcom/github/catvod/spider/merge/FM/L/a;)V
+    .registers 5
+
+    sget-object v0, Lcom/github/catvod/spider/merge/FM/L/j1;->a0:Lcom/github/catvod/spider/merge/FM/L/P0;
+
+    invoke-virtual {p2}, Lcom/github/catvod/spider/merge/FM/L/a;->H()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_f
+
+    invoke-virtual {p1}, Lcom/github/catvod/spider/merge/FM/L/T;->g()V
+
+    invoke-virtual {p1, v0}, Lcom/github/catvod/spider/merge/FM/L/T;->v(Lcom/github/catvod/spider/merge/FM/L/j1;)V
+
+    return-void
+
+    :cond_f
+    invoke-virtual {p2}, Lcom/github/catvod/spider/merge/FM/L/a;->f()C
+
+    move-result p2
+
+    if-eqz p2, :cond_4d
+
+    const/16 v1, 0x20
+
+    if-eq p2, v1, :cond_60
+
+    const v1, 0xffff
+
+    if-eq p2, v1, :cond_39
+
+    const/16 v1, 0x9
+
+    if-eq p2, v1, :cond_60
+
+    const/16 v1, 0xa
+
+    if-eq p2, v1, :cond_60
+
+    const/16 v1, 0xc
+
+    if-eq p2, v1, :cond_60
+
+    const/16 v1, 0xd
+
+    if-eq p2, v1, :cond_60
+
+    invoke-virtual {p1}, Lcom/github/catvod/spider/merge/FM/L/T;->g()V
+
+    iget-object v1, p1, Lcom/github/catvod/spider/merge/FM/L/T;->m:Lcom/github/catvod/spider/merge/FM/L/K;
+
+    iget-object v1, v1, Lcom/github/catvod/spider/merge/FM/L/K;->d:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_5d
+
+    :cond_39
+    invoke-virtual {p1, p0}, Lcom/github/catvod/spider/merge/FM/L/T;->q(Lcom/github/catvod/spider/merge/FM/L/j1;)V
+
+    invoke-virtual {p1}, Lcom/github/catvod/spider/merge/FM/L/T;->g()V
+
+    iget-object p2, p1, Lcom/github/catvod/spider/merge/FM/L/T;->m:Lcom/github/catvod/spider/merge/FM/L/K;
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p2, Lcom/github/catvod/spider/merge/FM/L/K;->h:Z
+
+    invoke-virtual {p1}, Lcom/github/catvod/spider/merge/FM/L/T;->o()V
+
+    sget-object p2, Lcom/github/catvod/spider/merge/FM/L/j1;->a:Lcom/github/catvod/spider/merge/FM/L/e0;
+
+    invoke-virtual {p1, p2}, Lcom/github/catvod/spider/merge/FM/L/T;->v(Lcom/github/catvod/spider/merge/FM/L/j1;)V
+
+    goto :goto_60
+
+    :cond_4d
+    invoke-virtual {p1, p0}, Lcom/github/catvod/spider/merge/FM/L/T;->r(Lcom/github/catvod/spider/merge/FM/L/j1;)V
+
+    invoke-virtual {p1}, Lcom/github/catvod/spider/merge/FM/L/T;->g()V
+
+    iget-object p2, p1, Lcom/github/catvod/spider/merge/FM/L/T;->m:Lcom/github/catvod/spider/merge/FM/L/K;
+
+    iget-object p2, p2, Lcom/github/catvod/spider/merge/FM/L/K;->d:Ljava/lang/StringBuilder;
+
+    const v1, 0xfffd
+
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :goto_5d
+    invoke-virtual {p1, v0}, Lcom/github/catvod/spider/merge/FM/L/T;->v(Lcom/github/catvod/spider/merge/FM/L/j1;)V
+
+    :cond_60
+    :goto_60
+    return-void
+.end method
